@@ -1,10 +1,10 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.YOURUSERNAME/vweatherstation",
-  "description": "Settlement-grade weather data for prediction markets (Polymarket/Kalshi): temperature, rain, wind, snow, hurricanes and forecast confidence at the exact stations markets settle on. Paid per call via x402 (USDC on Base).",
+  "name": "io.github.vweatherstation/vweatherstation",
+  "description": "Settlement-grade weather data for prediction markets via x402.",
   "version": "1.0.0",
   "repository": {
-    "url": "https://github.com/YOURUSERNAME/vweatherstation-mcp",
+    "url": "https://github.com/vweatherstation/vweatherstation-mcp",
     "source": "github"
   },
   "packages": [
