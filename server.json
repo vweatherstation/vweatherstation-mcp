@@ -9,9 +9,12 @@
   },
   "packages": [
     {
-      "registrytype": "npm",
+      "registryType": "npm",
       "identifier": "vweatherstation-mcp",
       "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
       "environment_variables": [
         {
           "name": "WALLET_PRIVATE_KEY",
