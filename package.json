@@ -1,0 +1,19 @@
+{
+  "name": "vweatherstation-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for VWeatherStation — settlement-grade weather data for prediction markets (Polymarket/Kalshi): temperature, rain, wind, snow, hurricanes and forecast confidence, paid per call via x402 (USDC on Base).",
+  "type": "module",
+  "bin": { "vweatherstation-mcp": "server.js" },
+  "files": ["server.js", "README.md"],
+  "keywords": ["mcp", "weather", "x402", "prediction-markets", "polymarket", "kalshi", "temperature", "hurricanes"],
+  "author": "VWeatherStation",
+  "license": "MIT",
+  "homepage": "https://vweatherstation.com/api/v1/",
+  "repository": { "type": "git", "url": "git+https://github.com/YOURUSERNAME/vweatherstation-mcp.git" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "x402-fetch": "^0.6.0",
+    "viem": "^2.0.0"
+  },
+  "mcpName": "io.github.YOURUSERNAME/vweatherstation"
+}
