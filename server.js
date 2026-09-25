@@ -25,6 +25,12 @@ const CITY = { type: "string", description: "city slug e.g. new-york, london, ch
 
 const TOOLS = [
   {
+    name: "get_weather",
+    description: "General current weather and 7-day forecast for ANY latitude/longitude: temperature, feels-like, humidity, pressure, wind speed/gust/direction, precipitation, UV, sunrise/sunset and solar radiation. The everyday weather endpoint (not tied to prediction markets). $0.02/call.",
+    inputSchema: { type: "object", properties: { lat: { type: "number" }, lon: { type: "number" }, units: { type: "string", description: "metric or imperial (optional)" } }, required: ["lat", "lon"] },
+    run: (a) => callApi(`/weather/?lat=${a.lat}&lon=${a.lon}${a.units ? `&units=${encodeURIComponent(a.units)}` : ""}`),
+  },
+  {
     name: "get_temperature",
     description: "Settlement-grade temperature at the exact stations Polymarket/Kalshi temperature markets resolve on (KNYC Central Park, EGLL Heathrow, etc.). Current temp, today's high/low (settlement number), forecast. $0.05/call.",
     inputSchema: { type: "object", properties: { city: CITY } },
@@ -80,4 +86,4 @@ server.setRequestHandler(CallToolRequestSchema, async (req) => {
 });
 const transport = new StdioServerTransport();
 await server.connect(transport);
-console.error("VWeatherStation MCP server running (7 tools).");
+console.error("VWeatherStation MCP server running (8 tools).");
