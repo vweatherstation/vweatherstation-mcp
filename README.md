@@ -3,6 +3,7 @@
 MCP server exposing [VWeatherStation](https://vweatherstation.com)'s paid weather API as tools for AI assistants. Settlement-grade weather data for prediction markets (Polymarket/Kalshi), paid per call via **x402** (USDC on Base).
 
 ## Tools
+- `get_weather` — general current weather + 7-day forecast for any lat/lon ($0.02)
 - `get_temperature` — settlement-grade temp at market stations ($0.05)
 - `get_all_market_weather` — all metrics for a city ($0.08)
 - `get_rain` / `get_wind` / `get_snow` — per-metric ($0.04)

@@ -1,6 +1,6 @@
 {
   "name": "vweatherstation-mcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "MCP server for VWeatherStation — settlement-grade weather data for prediction markets (Polymarket/Kalshi): general weather plus temperature, rain, wind, snow, hurricanes and forecast confidence, paid per call via x402 (USDC on Base).",
   "type": "module",
   "bin": { "vweatherstation-mcp": "server.js" },
